@@ -1,3 +1,4 @@
+import { lineBreak } from './helpers'
 
 const aCoolFunction = (coolNameA: string, coolNameB: string): void => {
   console.log(`I am with the cool kids ${coolNameA} and ${coolNameB}.`)
@@ -9,6 +10,8 @@ even with type errors.
 */
 // aCoolFunction('mal')
 aCoolFunction('malavan', 'maiyuren')
+
+lineBreak()
 
 /*
 * Once TS has inferred a type for a variable it can only take on that type.
