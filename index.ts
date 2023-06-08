@@ -9,3 +9,12 @@ even with type errors.
 */
 // aCoolFunction('mal')
 aCoolFunction('malavan', 'maiyuren')
+
+/*
+* Once TS has inferred a type for a variable it can only take on that type.
+*
+*/
+let stringVariable = 'iAmString' // TS has inferred stringVariable is a string type.
+stringVariable = 'anotherString'
+// stringVariable = 21 // will throw a TS error yet compile to JS and run successfully.
+console.log('stringVariable:', stringVariable)
