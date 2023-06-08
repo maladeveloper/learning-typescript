@@ -1,0 +1,1 @@
+const sharedVariable = 'Hello World'
