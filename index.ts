@@ -21,3 +21,20 @@ let stringVariable = 'iAmString' // TS has inferred stringVariable is a string t
 stringVariable = 'anotherString'
 // stringVariable = 21 // will throw a TS error yet compile to JS and run successfully.
 console.log('stringVariable:', stringVariable)
+
+lineBreak()
+
+/*
+* Variables declared without an initial variable to infer from can be assigned different types.
+*  */
+let changingTypeVariable
+console.log('changingTypeVariable:', changingTypeVariable)
+console.log('changingTypeVariable type :', typeof changingTypeVariable)
+changingTypeVariable = 'aString'
+console.log('changingTypeVariable:', changingTypeVariable)
+console.log('changingTypeVariable type :', typeof changingTypeVariable)
+changingTypeVariable = 23
+console.log('changingTypeVariable:', changingTypeVariable)
+console.log('changingTypeVariable type :', typeof changingTypeVariable)
+
+lineBreak()
