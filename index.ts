@@ -38,3 +38,18 @@ console.log('changingTypeVariable:', changingTypeVariable)
 console.log('changingTypeVariable type :', typeof changingTypeVariable)
 
 lineBreak()
+
+/*
+* Union types can assign a variable to be more than one type.
+* */
+let numberOrString: string | number | undefined // Need to put undefined or will have type error.
+console.log('numberOrString:', numberOrString)
+console.log('numberOrString type:', typeof numberOrString)
+numberOrString = 21
+console.log('numberOrString:', numberOrString)
+console.log('numberOrString type:', typeof numberOrString)
+numberOrString = 'hello world'
+console.log('numberOrString:', numberOrString)
+console.log('numberOrString type:', typeof numberOrString)
+
+lineBreak()
